@@ -1,0 +1,8 @@
+#include<stdio.h>
+main()
+{
+	printf("Enter your favorite number : ");
+	int favorite_number = 0;
+	scanf("%d",&favorite_number);
+	printf("Your number is %d, right? Great job, you choose nicely", favorite_number);
+}
