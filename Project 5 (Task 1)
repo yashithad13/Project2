@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int sumOfDigit(int number){
+	if (number == 0)
+	
+	return 0;
+	
+	return ((number%10) + sumOfDigit(number/10));
+}
+
+int main(){
+	
+int sumOfDigit(int digit);
+int number;
+int answer;
+
+
+printf(" Input\n Input number: ");
+scanf("%d",&number);
+
+answer = sumOfDigit(number);
+printf(" Output\n Sum of digits: %d", answer, number);
+
+return 0;
+	
+}
