@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main(){
+	
+  int array[3][3];
+  int x;
+  int y;
+  
+  printf("Input elements in the matrix : \n");
+  
+  for( x = 0; 3 > x;  x++){
+  	
+      for( y = 0; 3 > y; y++){
+      	
+	    printf("element - [%d],[%d] : ", x, y);
+	    scanf("%d", &array[x][y]);
+      }
+  }  
+  
+   printf("\n");
+   printf("The matrix is : \n");
+   
+   for( x = 0; 3 > x; x++){
+   	
+   	printf("\n");
+   	
+      for( y = 0; 3 > y; y++) {
+      	   printf(" %d\t", array[x][y]);
+	  }
+        
+  }
+}
