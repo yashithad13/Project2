@@ -1,0 +1,30 @@
+#include<stdio.h>
+
+struct employee{
+	char name;
+	int age;
+	int phone_number;
+	int salary;
+};
+int main(){
+	int e;
+	struct employee emp[20];
+	for (e = 0; 20 > e; e++){
+		
+		printf("\n Employees In Organization \n", e + 1);
+		
+		printf(" Name: ");
+		scanf("%s",&emp[e].name);
+		
+		printf(" Age: ");
+		scanf("%d",&emp[e].age);
+		
+		printf(" Phone Number: ");
+		scanf("%d",&emp[e].phone_number);
+		
+		printf(" Salary: ");
+		scanf("%d",&emp[e].salary);
+	
+	} 
+	return 0;
+}
