@@ -1,0 +1,56 @@
+#include<stdio.h>
+#include<conio.h>
+
+int main(){
+	
+	//1. Declare the FILE pointer
+	FILE *fp;
+
+	char sentence;                         
+	int count = 0;
+	char fname[1000];
+	int a;
+	int n = 0;
+	char words[1000];
+   
+    printf("File Name (add .txt at the end): ");
+	gets(fname);
+	fp = fopen(fname, "r");
+	
+	if(!fp){
+		
+	printf("\nNULL");
+	getch();
+	return 0;
+	
+	}
+	
+	printf("\nInput to the reverse function: \n");
+	
+	sentence = getc(fp);
+	
+	while(sentence != EOF){
+		
+		count++;
+		putchar(sentence);
+		words[n] = sentence;
+		n++;
+		sentence = getc(fp);
+		
+	}
+	
+	printf("\n\nOutput: \n");
+	
+	for(a=(count-1); a>=0; a--){
+		
+		sentence = words[a];
+		printf("%c", sentence);
+		
+	}
+	
+	printf("\n");
+	getch();
+	
+	return 0;
+}
+	
